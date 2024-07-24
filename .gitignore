@@ -13,3 +13,16 @@ finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/wandb-metadata.json
 finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/wandb-summary.json
 finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/logs/debug-internal.log
 finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/logs/debug.log
+et --hard HEAD~1
+finetuning_scripts/outputmodel_standard/checkpoint-500/adapter_config.json
+finetuning_scripts/outputmodel_standard/checkpoint-500/adapter_model.safetensors
+finetuning_scripts/outputmodel_standard/checkpoint-500/optimizer.pt
+finetuning_scripts/outputmodel_standard/checkpoint-500/README.md
+finetuning_scripts/outputmodel_standard/checkpoint-500/rng_state.pth
+finetuning_scripts/outputmodel_standard/checkpoint-500/scheduler.pt
+finetuning_scripts/outputmodel_standard/checkpoint-500/special_tokens_map.json
+finetuning_scripts/outputmodel_standard/checkpoint-500/tokenizer_config.json
+finetuning_scripts/outputmodel_standard/checkpoint-500/tokenizer.json
+finetuning_scripts/outputmodel_standard/checkpoint-500/trainer_state.json
+finetuning_scripts/outputmodel_standard/checkpoint-500/training_args.bin
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/output.log

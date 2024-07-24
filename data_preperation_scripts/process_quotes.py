@@ -37,8 +37,8 @@ def write_to_csv(quotes, csv_file_path):
         print(f"Error writing to {csv_file_path}: {e}")
 
 if __name__ == "__main__":
-    input_file_path = './moviequotes.memorable_nonmemorable_pairs.txt'
-    csv_file_path = './quotes_classification_data.csv'
+    input_file_path = '../dataset/moviequotes.memorable_nonmemorable_pairs.txt'
+    csv_file_path = '../dataset/quotes_classification_data.csv'
 
     quotes = process_file(input_file_path)
     if quotes:

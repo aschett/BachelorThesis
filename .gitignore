@@ -1,2 +1,15 @@
 # Ignore the datasets
 /dataset
+finetuning_scripts/finetune_llama3.ipynb
+finetuning_scripts/outputmodel_standard/runs/Jul24_13-26-23_DESKTOP-ENMRSVD/events.out.tfevents.1721820385.DESKTOP-ENMRSVD.9548.0
+finetuning_scripts/wandb/debug-internal.log
+finetuning_scripts/wandb/debug.log
+finetuning_scripts/wandb/latest-run
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/run-ysm0i5ke.wandb
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/conda-environment.yaml
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/config.yaml
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/requirements.txt
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/wandb-metadata.json
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/files/wandb-summary.json
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/logs/debug-internal.log
+finetuning_scripts/wandb/run-20240724_132626-ysm0i5ke/logs/debug.log

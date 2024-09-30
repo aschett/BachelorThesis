@@ -1,5 +1,5 @@
 # Ignore the datasets
-/dataset
+/dataset/
 /.env
-/ai_analyzed_dataset
-/finetuned_models
+/ai_analyzed_dataset/
+/finetuned_models/

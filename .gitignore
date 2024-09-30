@@ -2,6 +2,7 @@
 /dataset
 /finetuning_scripts/outputmodel_standard
 /finetuning_scripts/wandb/
-finetuning_scripts/finetune_llama3.ipynb
-et --hard HEAD~1
-
+/finetuning_scripts/finetune_llama3.ipynb
+/.env
+/ai_analyzed_dataset
+/finetuned_models

@@ -42,10 +42,27 @@ def analyze_quote(quote):
         print(f"An error occurred: {e}")
         return None
 
+#Function that restructures the dataset to creates new columns for each of the applicable categories
+def structure_dataset(dataset):
+    categories = ['Concreteness', 'Arousal', 'Valence', 'Humour', 'Semantics', 'Imagery', 'Simplicity']
+
+    # Create binary columns for each category and fill 1 if it appears and otherwise 0
+    for category in categories:
+        dataset[category] = dataset['Analysis'].apply(lambda x: 1 if pd.notnull(x) and category in x else 0)
+
+    return dataset
+
+
 # Add a new column for analysis that contains the number of listed applicable categories
 quotes_data['Analysis'] = quotes_data['Quote'].apply(analyze_quote)
 
 quotes_data['Category_Count'] = quotes_data['Analysis'].apply(lambda x: len(x.split(',')) if pd.notnull(x) else 0)
 
+quotes_data = structure_dataset(quotes_data)
+
 # Save the results to a new CSV file
-quotes_data.to_csv('quotes_analysis_results_v3.csv', index=False)
+try:
+    quotes_data.to_csv('../ai_analyzed_dataset/quotes_analysis_results.csv', index=False)
+except Exception as e:
+    print("Couldn't save dataset")
+    quotes_data.to_csv('./quotes_analysis_results.csv', index=False)

@@ -3,3 +3,4 @@
 /.env
 /ai_analyzed_dataset/
 /finetuned_models/
+/finetuning_scripts/*.ipynb

@@ -19,8 +19,8 @@ def process_file(input_file_path):
         non_memorable_quote = ' '.join(lines[i+3].split()[1:])  # The join is needed to get rid of the leading number in the ".txt" file
                 
         # Append quotes to the list with their corresponding types
-        quotes.append((memorable_quote, "Yes"))
-        quotes.append((non_memorable_quote, "No"))
+        quotes.append((memorable_quote, 1))
+        quotes.append((non_memorable_quote, 0))
 
     return quotes
 
@@ -38,7 +38,7 @@ def write_to_csv(quotes, csv_file_path):
 
 if __name__ == "__main__":
     input_file_path = '../dataset/moviequotes.memorable_nonmemorable_pairs.txt'
-    csv_file_path = '../dataset/quotes_classification_data.csv'
+    csv_file_path = '../dataset/quotes_classification_data1.csv'
 
     quotes = process_file(input_file_path)
     if quotes:

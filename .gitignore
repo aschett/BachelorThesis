@@ -3,7 +3,3 @@
 /.env
 /ai_analyzed_dataset/
 /finetuned_models/
-
-# Apparently removes the noise and metadata from jupyter notebooks
-[filter "strip-notebook-output"]
-clean = "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR" 
